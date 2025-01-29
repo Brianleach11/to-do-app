@@ -122,7 +122,7 @@ Start the development server:
 
 ```bash
 cd server
-npm run dev
+ts-node src/index.ts
 ```
 
 In a new terminal, navigate to the client directory and start the development server:
