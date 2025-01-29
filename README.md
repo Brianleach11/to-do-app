@@ -77,7 +77,7 @@ mysql -u root -p [password]
 ```
 
 ```bash
-CREATE DATABASE todo-app;
+CREATE DATABASE `todo-app`;
 SHOW DATABASES;
 ```
 
