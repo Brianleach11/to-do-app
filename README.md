@@ -60,6 +60,13 @@ npm install
 
 Ensure your MySQL server is running and create a new database named `todo-app`.
 
+MySQL documentation: https://dev.mysql.com/doc/mysql-getting-started/en/
+
+```bash
+CREATE DATABASE todo-app;
+SHOW DATABASES;
+```
+
 ### 4. Configure Environment Variables
 
 Create a `.env` file in the `server` directory with the following variables:
@@ -74,7 +81,28 @@ This is what mine was as I didn't have a password:
 DATABASE_URL=mysql://root:@localhost:3306/todo-app
 ```
 
-### 5. Run the Application
+Create a `.env` file in the `client` directory with the following variables:
+
+```bash
+BACKEND_URL=http://localhost:8000
+```
+
+### 5. Initialize Prisma and Create Database Tables
+
+Navigate to the server directory and run the following commands to set up Prisma and create the database tables:
+
+```bash
+cd server
+npx prisma generate
+npx prisma migrate dev --name init
+```
+
+This will:
+1. Generate the Prisma Client
+2. Create the database table based on the schema (server/prisma/schema.prisma)
+3. Apply all migrations
+
+### 6. Run the Application
 
 Start the development server:
 
