@@ -34,7 +34,60 @@ Before you begin, ensure you have the following installed:
 
 ### 1. Clone the Repositories
 
-Clone both the repository:
+Clone the repository:
 
 ```bash
-git clone https://github.com/brianleach11/to-do-app.git
+git clone https://github.com/BrianLeach11/to-do-app.git
+```
+
+### 2. Install Dependencies
+
+Navigate to the client directory and install the dependencies:
+
+```bash
+cd client
+npm install
+```
+
+Navigate to the server directory and install the dependencies:
+
+```bash
+cd server
+npm install
+```
+
+### 3. Set Up MySQL
+
+Ensure your MySQL server is running and create a new database named `todo-app`.
+
+### 4. Configure Environment Variables
+
+Create a `.env` file in the `server` directory with the following variables:
+
+```bash
+DATABASE_URL=mysql://your_username:your_password@localhost:3306/todo-app
+```
+
+This is what mine was as I didn't have a password:
+
+```bash
+DATABASE_URL=mysql://root:@localhost:3306/todo-app
+```
+
+### 5. Run the Application
+
+Start the development server:
+
+```bash
+cd server
+npm run dev
+```
+
+In a new terminal, navigate to the client directory and start the development server:
+
+```bash
+cd client
+npm run dev
+```
+
+Open your browser and navigate to `http://localhost:3000` to see the application.
