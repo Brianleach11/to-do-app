@@ -68,6 +68,14 @@ Ensure your MySQL server is running and create a new database named `todo-app`.
 
 MySQL documentation: https://dev.mysql.com/doc/mysql-getting-started/en/
 
+In the terminal (mac-os):
+
+```bash
+mysql -u root
+or
+mysql -u root -p [password]
+```
+
 ```bash
 CREATE DATABASE todo-app;
 SHOW DATABASES;
