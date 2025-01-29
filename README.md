@@ -40,6 +40,12 @@ Clone the repository:
 git clone https://github.com/BrianLeach11/to-do-app.git
 ```
 
+Then navigate to the new directory:
+
+```bash
+cd to-do-app
+```
+
 ### 2. Install Dependencies
 
 Navigate to the client directory and install the dependencies:
